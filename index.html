@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saffron &amp; Hearth | Artisan Wood-Fired Kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#home" class="brand">Saffron <span>&amp;</span> Hearth</a>
+      <button id="hamburgerBtn" class="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="navList" class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#offers">Special Offers</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta">Book a Table</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">Wood-Fired Culinary Craft</span>
+        <h1>Where Open-Flame Tradition Meets Modern Flavor</h1>
+        <p>Experience seasonal ingredients roasted over seasoned oak, handmade pastas, and aromatic spice blends crafted fresh every single evening.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+          <a href="#contact" class="btn btn-outline">Reserve a Table</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>4.9 &#9733;</strong>
+            <span>2,400+ Guest Reviews</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Locally Sourced Produce</span>
+          </div>
+          <div class="stat">
+            <strong>Open Daily</strong>
+            <span>11:30 AM &ndash; 11:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food Menu Section -->
+  <section id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curated Flavors</span>
+        <h2>Our Signature Menu</h2>
+        <p>Thoughtfully prepared dishes balancing smoky hearth warmth, vibrant herbs, and rich textures.</p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Menu Categories">
+        <button class="filter-btn active" data-category="all">All Dishes</button>
+        <button class="filter-btn" data-category="starters">Starters</button>
+        <button class="filter-btn" data-category="mains">Main Courses</button>
+        <button class="filter-btn" data-category="drinks-desserts">Desserts &amp; Drinks</button>
+      </div>
+
+      <!-- Category 1 -->
+      <div class="menu-category" data-category="starters">
+        <h3 class="category-title">Artisanal Starters</h3>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-img-wrap">
+              <span class="badge">Chef's Pick</span>
+              <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Heirloom Tomato Bruschetta" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h4>Heirloom Tomato Bruschetta</h4>
+                <span class="price">$11</span>
+              </div>
+              <p>Wood-toasted sourdough topped with whipped ricotta, roasted cherry tomatoes, aged balsamic, and fresh basil.</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-img-wrap">
+              <span class="badge">Gluten-Free</span>
+              <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Saffron Charred Paneer Skewers" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h4>Saffron Charred Paneer Skewers</h4>
+                <span class="price">$13</span>
+              </div>
+              <p>Marinated cottage cheese cubes grilled over live embers with bell peppers, mint yogurt chutney, and toasted cumin.</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Cracked Pepper Calamari" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h4>Cracked Pepper Calamari</h4>
+                <span class="price">$15</span>
+              </div>
+              <p>Lightly dusted crispy squid rings served with roasted garlic aioli, charred lemon, and pickled chili threads.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="menu-category" data-category="mains">
+        <h3 class="category-title">Signature Main Courses</h3>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-img-wrap">
+              <span class="badge">Most Popular</span>
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Hearth-Roasted Herb Ribeye" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h4>Hearth-Roasted Herb Ribeye</h4>
+                <span class="price">$32</span>
+              </div>
+              <p>12oz dry-aged steak basted in rosemary garlic butter, served alongside truffle potato pave and charred broccolini.</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Wild Mushroom Tagliatelle" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h4>Wild Mushroom Tagliatelle</h4>
+                <span class="price">$23</span>
+              </div>
+              <p>Hand-cut egg ribbon pasta tossed in roasted porcini cream, black truffle oil, thyme, and 24-month Parmigiano.</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-img-wrap">
+              <span class="badge">Wood-Fired</span>
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Smoked Burrata and Fig Pizza" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h4>Smoked Burrata &amp; Fig Pizza</h4>
+                <span class="price">$21</span>
+              </div>
+              <p>72-hour fermented crust blistered at 850&deg;F with San Marzano sauce, creamy burrata, fresh figs, and hot honey.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="menu-category" data-category="drinks-desserts">
+        <h3 class="category-title">Desserts &amp; Craft Beverages</h3>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Roasted Hazelnut Tiramisu" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h4>Roasted Hazelnut Tiramisu</h4>
+                <span class="price">$10</span>
+              </div>
+              <p>Espresso-soaked savoiardi layered with mascarpone mousse, dark cocoa dust, and caramelized Piedmont hazelnuts.</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Smoked Blood Orange Spritz" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h4>Smoked Blood Orange Spritz</h4>
+                <span class="price">$9</span>
+              </div>
+              <p>Freshly pressed blood orange juice, charred rosemary syrup, sparkling botanical tonic, and dehydrated citrus wheel.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers Section -->
+  <section id="offers" class="offers-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Limited Time</span>
+        <h2>Seasonal Dining Specials</h2>
+        <p>Gather around the table with curated multi-course experiences and weekday dining privileges.</p>
+      </div>
+
+      <div class="offers-grid">
+        <div class="offer-card">
+          <div>
+            <span class="offer-pill">Tue &ndash; Thu &bull; 5 PM &ndash; 7 PM</span>
+            <h3>Sunset Hearth Feast for Two</h3>
+            <p>Includes any two artisanal starters, two wood-fired main courses, and a shared hazelnut tiramisu.</p>
+          </div>
+          <div class="offer-pricing">
+            <div>
+              <span class="new-price">$58</span>
+              <span class="old-price">$76</span>
+            </div>
+            <a href="#contact" class="btn btn-primary claim-offer-btn" data-offer="Sunset Hearth Feast for Two ($58)">Claim Offer</a>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div>
+            <span class="offer-pill">Weekend Brunch</span>
+            <h3>Artisan Pizza &amp; Spritz Combo</h3>
+            <p>Enjoy any signature wood-fired sourdough pizza paired with two craft botanical spritzes on our garden patio.</p>
+          </div>
+          <div class="offer-pricing">
+            <div>
+              <span class="new-price">$30</span>
+              <span class="old-price">$39</span>
+            </div>
+            <a href="#contact" class="btn btn-primary claim-offer-btn" data-offer="Artisan Pizza & Spritz Combo ($30)">Claim Offer</a>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div>
+            <span class="offer-pill">Family Sunday</span>
+            <h3>Sunday Hearth Table Platter</h3>
+            <p>Generous sharing board featuring grilled skewers, handmade tagliatelle, charred vegetables, and warm garlic flatbreads.</p>
+          </div>
+          <div class="offer-pricing">
+            <div>
+              <span class="new-price">$74</span>
+              <span class="old-price">$95</span>
+            </div>
+            <a href="#contact" class="btn btn-primary claim-offer-btn" data-offer="Sunday Hearth Table Platter ($74)">Claim Offer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Guest Stories</span>
+        <h2>What Our Diners Say</h2>
+        <p>Memorable evenings shared by food lovers, families, and travelers.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The Smoked Burrata &amp; Fig Pizza has the best blistered sourdough crust I have ever tasted. Warm lighting, attentive staff, and unforgettable flavors."</p>
+          <div class="reviewer">
+            <div class="avatar">AR</div>
+            <div>
+              <strong>Ananya Rao</strong>
+              <span>Verified Diner &bull; Google Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"We booked the Sunset Hearth Feast for our anniversary. Every dish arrived sizzling from the open kitchen, and the wild mushroom tagliatelle was perfection."</p>
+          <div class="reviewer">
+            <div class="avatar">MK</div>
+            <div>
+              <strong>Marcus Vance</strong>
+              <span>Food Critic &bull; Local Table Guide</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"A cozy yet upscale atmosphere with generous portions and authentic wood-fired aroma. Make sure to save room for the roasted hazelnut tiramisu!"</p>
+          <div class="reviewer">
+            <div class="avatar">PS</div>
+            <div>
+              <strong>Priya Sharma</strong>
+              <span>Regular Guest</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visit Us</span>
+        <h2>Location &amp; Table Reservations</h2>
+        <p>Join us for dinner or reserve your table online in seconds.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="info-card">
+          <div class="info-item">
+            <h4>Address</h4>
+            <p>742 Emberstone Avenue, Culinary District, NY 10014</p>
+          </div>
+          <div class="info-item">
+            <h4>Opening Hours</h4>
+            <p>Monday &ndash; Thursday: 11:30 AM &ndash; 10:30 PM<br />Friday &ndash; Sunday: 11:30 AM &ndash; 11:30 PM</p>
+          </div>
+          <div class="info-item">
+            <h4>Contact</h4>
+            <p>Phone: +1 (555) 234-8890<br />Email: reservations@saffronhearth.com</p>
+          </div>
+
+          <div class="map-box">
+            <small>Location Pin</small>
+            <h4>Saffron &amp; Hearth Flagship</h4>
+            <p>2 blocks west of Central Market Plaza &bull; Complimentary Valet Parking after 6 PM</p>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <form id="bookingForm" action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Reservation Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="guests">Party Size</label>
+                <select id="guests" name="guests">
+                  <option>2 Guests</option>
+                  <option>4 Guests</option>
+                  <option>6 Guests</option>
+                  <option>8+ Guests (Private Table)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Special Requests or Offer Code</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Dietary preferences, anniversary celebration, or seasonal offer..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn">Confirm Table Reservation</button>
+            <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <a href="#home" class="brand">Saffron <span>&amp;</span> Hearth</a>
+      <p>&copy; 2026 Saffron &amp; Hearth Artisan Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
